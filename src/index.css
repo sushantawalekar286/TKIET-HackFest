@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-100 font-body antialiased overflow-x-hidden;
+    background:
+      radial-gradient(circle at top left, rgba(139, 92, 246, 0.18), transparent 30%),
+      radial-gradient(circle at top right, rgba(34, 211, 238, 0.12), transparent 28%),
+      linear-gradient(180deg, #020617 0%, #020617 100%);
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(148, 163, 184, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(148, 163, 184, 0.03) 1px, transparent 1px);
+    background-size: 72px 72px;
+    mask-image: radial-gradient(circle at center, black, transparent 88%);
+    z-index: -1;
+  }
+
+  * {
+    @apply border-white/10;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply rounded-3xl border border-white/10 bg-white/10 backdrop-blur-xl shadow-glass;
+  }
+
+  .section-shell {
+    @apply relative mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-10;
+  }
+
+  .section-label {
+    @apply inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200;
+  }
+
+  .section-title {
+    @apply mt-5 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl;
+  }
+
+  .section-copy {
+    @apply mt-4 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg;
+  }
+
+  .gradient-button {
+    @apply inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-violet-500 via-blue-500 to-cyan-400 px-6 py-3 text-sm font-semibold text-white shadow-[0_20px_60px_rgba(59,130,246,0.3)] transition-transform duration-300 hover:scale-[1.03] hover:shadow-[0_24px_70px_rgba(139,92,246,0.35)];
+  }
+
+  .ghost-button {
+    @apply inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white/90 backdrop-blur-md transition-transform duration-300 hover:scale-[1.03] hover:border-cyan-300/30 hover:bg-white/10;
+  }
+
+  .glow-ring {
+    @apply pointer-events-none absolute inset-0 rounded-[inherit] bg-gradient-to-r from-violet-500/20 via-cyan-400/20 to-blue-500/20 blur-3xl;
+  }
+}
