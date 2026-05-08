@@ -1,11 +1,18 @@
 export default function Footer({ navigation, onNavigate }) {
   return (
-    <footer className="border-t border-white/10 py-10">
+    <footer id="contact" className="border-t border-white/10 py-10">
       <div className="section-shell flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
         <div>
-          <p className="font-display text-2xl font-bold text-white">HackFest</p>
+          <div className="flex flex-wrap items-center gap-4 mb-4">
+            <img src="/LogiCode.png" alt="LogiCode" className="h-12 w-auto object-contain" />
+            <img src="/HackFest.jpeg" alt="HackFest" className="h-12 w-auto object-contain rounded-lg" />
+          </div>
+          <p className="font-display text-2xl font-bold text-white">LOGICODE HACKFEST 2026</p>
           <p className="mt-2 max-w-md text-sm leading-6 text-slate-400">
-            A futuristic hackathon landing experience built for speed, clarity, and a premium demo feel.
+            Department of Computer Science & Engineering<br />
+            Logicode Coding Club<br />
+            Tatyasaheb Kore Institute of Engineering & Technology<br />
+            (An Autonomous Institute), Warananagar, Kolhapur
           </p>
         </div>
 
@@ -24,9 +31,8 @@ export default function Footer({ navigation, onNavigate }) {
 
         <div className="flex items-center gap-3">
           {[
-            ['X', 'https://x.com'],
-            ['IG', 'https://instagram.com'],
-            ['GH', 'https://github.com'],
+            ['IG', 'https://instagram.com/logicode_tkiet'],
+            ['IN', 'https://linkedin.com/in/logicodetkiet'],
           ].map(([label, href]) => (
             <a
               key={label}
@@ -42,8 +48,7 @@ export default function Footer({ navigation, onNavigate }) {
       </div>
 
       <div className="section-shell mt-8 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
-        <p>© 2026 HackFest. All rights reserved.</p>
-        <p>Built with React, Tailwind CSS, Framer Motion, and React Three Fiber.</p>
+        <p>© 2026 LOGICODE HACKFEST. All rights reserved.</p>
       </div>
     </footer>
   );

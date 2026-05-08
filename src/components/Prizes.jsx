@@ -2,20 +2,20 @@ import { motion } from 'framer-motion';
 
 const prizes = [
   {
-    title: 'Grand Winner',
-    value: 'Champion Package',
-    description: 'Top-tier recognition, spotlight demo, and premium swag.',
+    title: 'Winner',
+    value: '₹3000',
+    description: 'Top-tier recognition, spotlight demo, and premium certificate.',
     accent: 'from-violet-500/30 to-cyan-400/20',
   },
   {
-    title: 'Runner Up',
-    value: 'Innovation Award',
+    title: 'Runner-Up',
+    value: '₹2000',
     description: 'A strong runner-up prize for a polished and useful prototype.',
     accent: 'from-blue-500/25 to-violet-500/20',
   },
   {
-    title: 'Special Mentions',
-    value: 'Track Honors',
+    title: 'Third Place',
+    value: '₹1000',
     description: 'Recognition for standout design, utility, and technical craft.',
     accent: 'from-cyan-400/25 to-blue-500/20',
   },
@@ -40,10 +40,10 @@ export default function Prizes() {
             Prizes
           </motion.span>
           <motion.h2 variants={fadeUp} transition={{ duration: 0.55 }} className="section-title">
-            Rewards that feel worth the effort.
+            Exciting Prizes to Win.
           </motion.h2>
           <motion.p variants={fadeUp} transition={{ duration: 0.55 }} className="section-copy">
-            The prize pool is structured to celebrate the best all-around experience, not just raw technical output. Build something memorable, useful, and elegant.
+            In addition to cash prizes, all attendees will receive Participation Certificates. Expect excellent Networking Opportunities and Recognition Awards for the top teams.
           </motion.p>
 
           <div className="mt-10 grid gap-6 lg:grid-cols-3">

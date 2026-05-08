@@ -9,7 +9,7 @@ const fadeUp = {
 function CountdownTimer() {
   const calculateTimeLeft = () => {
     // Set to some future date
-    const targetDate = new Date('2026-05-24T00:00:00');
+    const targetDate = new Date('2026-05-22T08:00:00');
     const difference = +targetDate - +new Date();
     let timeLeft = {};
 
@@ -62,10 +62,13 @@ export default function Hero({ onRegister, onNavigate }) {
           animate="show"
           variants={{ show: { transition: { staggerChildren: 0.12 } } }}
         >
-          {/* Quick Info Pills */}
           <motion.div variants={fadeUp} transition={{ duration: 0.7 }} className="flex flex-wrap items-center justify-center gap-3">
-            <span className="rounded-full bg-cyan-500/10 border border-cyan-400/20 px-4 py-1.5 text-xs font-semibold tracking-widest text-cyan-300 uppercase">May 24-26, 2026</span>
-            <span className="rounded-full bg-purple-500/10 border border-purple-400/20 px-4 py-1.5 text-xs font-semibold tracking-widest text-purple-300 uppercase">Virtual Event</span>
+            <span className="rounded-full bg-cyan-500/10 border border-cyan-400/20 px-4 py-1.5 text-xs font-semibold tracking-widest text-cyan-300 uppercase">📅 22 May 2026</span>
+            <span className="rounded-full bg-purple-500/10 border border-purple-400/20 px-4 py-1.5 text-xs font-semibold tracking-widest text-purple-300 uppercase">📍 Offline Mode</span>
+            <span className="rounded-full bg-green-500/10 border border-green-400/20 px-4 py-1.5 text-xs font-semibold tracking-widest text-green-300 uppercase">🏆 Cash Prizes</span>
+            <span className="rounded-full bg-yellow-500/10 border border-yellow-400/20 px-4 py-1.5 text-xs font-semibold tracking-widest text-yellow-300 uppercase">👨‍💻 Team Size: 2–4</span>
+            <span className="rounded-full bg-red-500/10 border border-red-400/20 px-4 py-1.5 text-xs font-semibold tracking-widest text-red-300 uppercase">⏱️ 6 Hour Sprint</span>
+            <span className="rounded-full bg-pink-500/10 border border-pink-400/20 px-4 py-1.5 text-xs font-semibold tracking-widest text-pink-300 uppercase">🎓 FCT Colleges Only</span>
           </motion.div>
 
           {/* Centered Heading */}
@@ -74,15 +77,15 @@ export default function Hero({ onRegister, onNavigate }) {
             transition={{ duration: 0.75 }}
             className="mt-8 font-display text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-tight"
           >
-            Code.<br className="sm:hidden" /> Create.<br className="sm:hidden" />
-            <span className="bg-gradient-to-r from-purple-500 to-cyan-400 bg-clip-text text-transparent sm:ml-4">
-              Innovate.
+            LOGICODE<br />
+            <span className="bg-gradient-to-r from-purple-500 to-cyan-400 bg-clip-text text-transparent">
+              HACKFEST 2026
             </span>
           </motion.h1>
 
           {/* Subtitle */}
           <motion.p variants={fadeUp} transition={{ duration: 0.75 }} className="mt-8 text-base md:text-lg text-slate-400 max-w-2xl px-2">
-            Join the ultimate hackathon experience. Build the future with visionary developers, designers, and innovators. Push boundaries and win big.
+            A university-level innovation challenge where students collaborate, build real-world solutions, and compete in an intense 6-hour coding sprint.
           </motion.p>
 
           <CountdownTimer />
@@ -103,11 +106,11 @@ export default function Hero({ onRegister, onNavigate }) {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => onNavigate('about')}
+              onClick={() => onNavigate('themes')}
               className="ghost-button w-full sm:w-auto text-base py-4 px-8"
               type="button"
             >
-              Explore HackFest
+              Explore Domains
             </motion.button>
           </motion.div>
         </motion.div>

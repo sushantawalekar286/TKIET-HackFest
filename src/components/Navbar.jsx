@@ -13,12 +13,13 @@ export default function Navbar({ navigation, onNavigate, onRegister }) {
     <header className="sticky top-0 z-40 border-b border-white/10 bg-slate-950/70 backdrop-blur-2xl">
       <div className="section-shell flex h-20 items-center justify-between gap-4">
         <button onClick={() => handleNavigate('about')} className="flex items-center gap-3 text-left" type="button">
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-300/20 bg-white/10 text-lg font-bold text-cyan-200 shadow-glowBlue">
-            H
-          </span>
-          <span>
-            <span className="block font-display text-lg font-bold tracking-wide text-white">HackFest</span>
-            <span className="block text-xs uppercase tracking-[0.28em] text-slate-400">2026</span>
+          <div className="flex items-center gap-2">
+            <img src="/LogiCode.png" alt="LogiCode Logo" className="h-10 w-auto object-contain drop-shadow-md" />
+            <img src="/HackFest.jpeg" alt="HackFest Logo" className="h-10 w-auto object-contain rounded-lg drop-shadow-md" />
+          </div>
+          <span className="hidden sm:block">
+            <span className="block font-display text-lg font-bold tracking-wide text-white">LOGICODE</span>
+            <span className="block text-xs uppercase tracking-[0.28em] text-slate-400">HACKFEST 2026</span>
           </span>
         </button>
 

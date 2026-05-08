@@ -2,28 +2,28 @@ import { motion } from 'framer-motion';
 
 const themes = [
   {
-    title: 'AI / ML',
-    description: 'Build assistants, predictive tools, computer vision flows, and smart product experiences.',
+    title: 'FinTech',
+    description: 'Innovative solutions for digital payments, banking access, and financial inclusion.',
     accent: 'from-violet-500/25 to-cyan-400/20',
-    label: 'Neural Ideas',
+    label: 'Finance',
   },
   {
-    title: 'Web Development',
-    description: 'Create immersive interfaces, dashboards, tooling, and polished consumer web apps.',
+    title: 'AgriTech',
+    description: 'Smart technologies for agriculture and rural development.',
     accent: 'from-blue-500/25 to-cyan-400/20',
-    label: 'Pixel Perfect',
+    label: 'Agriculture',
   },
   {
-    title: 'Cybersecurity',
-    description: 'Ensure data integrity, detect anomalies, build secure protocols, and innovate zero-trust architectures.',
+    title: 'EdTech',
+    description: 'Tools for enhanced learning and accessible education.',
     accent: 'from-emerald-500/20 to-teal-400/20',
-    label: 'Zero Trust',
+    label: 'Education',
   },
   {
-    title: 'Cloud Computing',
-    description: 'Design scalable infrastructure, optimize deployment pipelines, and leverage serverless capabilities.',
+    title: 'HealthTech',
+    description: 'Technology-driven healthcare and wellness solutions.',
     accent: 'from-sky-500/20 to-indigo-500/20',
-    label: 'Scale Fast',
+    label: 'Healthcare',
   },
 ];
 
@@ -43,16 +43,16 @@ export default function Themes() {
           variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
         >
           <motion.span variants={fadeUp} transition={{ duration: 0.55 }} className="section-label">
-            Themes
+            Domains
           </motion.span>
           <motion.h2 variants={fadeUp} transition={{ duration: 0.55 }} className="section-title">
-            Five tracks built for high-impact ideas.
+            Four domains built for high-impact ideas.
           </motion.h2>
           <motion.p variants={fadeUp} transition={{ duration: 0.55 }} className="section-copy">
-            Choose a lane that fits your strengths, then push it beyond the obvious. Each track supports bold concepts and production-minded execution.
+            Choose a sector that fits your strengths, then innovate beyond the obvious. Each domain supports bold concepts to solve real-world problems.
           </motion.p>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {themes.map((theme) => (
               <motion.article
                 key={theme.title}

@@ -111,15 +111,14 @@ export default function Laptop() {
               pointerEvents: 'none'
             }}
           >
-            <div className="flex flex-col items-center justify-center p-4 rounded-xl border border-blue-500/30 bg-black/40 backdrop-blur-md shadow-[0_0_20px_rgba(59,130,246,0.3)]">
-              {/* Logo representation */}
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl border-2 border-cyan-400/50 bg-blue-500/20 text-3xl font-extrabold text-cyan-300 shadow-[0_0_15px_rgba(34,211,238,0.5)]">
-                T
+            <div className="flex flex-col items-center justify-center p-5 rounded-xl border border-blue-500/30 bg-black/60 backdrop-blur-md shadow-[0_0_20px_rgba(59,130,246,0.3)] w-full max-w-[360px]">
+              <div className="flex flex-row items-center justify-center gap-6">
+                <img src="/LogiCode.png" alt="LogiCode Logo" className="h-20 w-auto object-contain drop-shadow-[0_0_15px_rgba(34,211,238,0.6)]" />
+                <img src="/HackFest.jpeg" alt="HackFest Logo" className="h-20 w-auto object-contain rounded-xl drop-shadow-[0_0_15px_rgba(168,85,247,0.6)]" />
               </div>
-              <h2 className="mt-4 font-display text-2xl font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
-                TKIET CLUB
+              <h2 className="mt-5 font-display text-xl font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 text-center uppercase">
+                LOGICODE HACKFEST
               </h2>
-              <div className="mt-2 h-1 w-24 rounded-full bg-cyan-400/50 shadow-[0_0_10px_#22d3ee]"></div>
             </div>
           </Html>
         </group>

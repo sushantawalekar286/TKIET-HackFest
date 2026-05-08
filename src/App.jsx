@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 
 const Scene = lazy(() => import('./three/Scene'));
 
-const registerUrl = 'https://forms.gle/YOUR_LINK';
+const registerUrl = 'https://forms.gle/8uNmSQYqjpsrPAjx8';
 
 const sectionIds = ['about', 'whyjoin', 'themes', 'timeline', 'prizes', 'faq'];
 
@@ -46,7 +46,15 @@ export default function App() {
   }, []);
 
   const navigation = useMemo(
-    () => sectionIds.map((id) => ({ id, label: id === 'faq' ? 'FAQ' : id === 'whyjoin' ? 'Why Join' : id.charAt(0).toUpperCase() + id.slice(1) })),
+    () => [
+      { id: 'home', label: 'Home' },
+      { id: 'about', label: 'About' },
+      { id: 'themes', label: 'Domains' },
+      { id: 'timeline', label: 'Timeline' },
+      { id: 'prizes', label: 'Prizes' },
+      { id: 'faq', label: 'FAQ' },
+      { id: 'contact', label: 'Contact' },
+    ],
     [],
   );
 
@@ -55,6 +63,10 @@ export default function App() {
   };
 
   const scrollToSection = (id) => {
+    if (id === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
@@ -89,7 +101,7 @@ export default function App() {
             <div className="glass-card flex flex-col items-center gap-4 px-8 py-10 text-center">
               <div className="h-16 w-16 rounded-full border-2 border-cyan-300/30 border-t-cyan-300 animate-spin" />
               <div>
-                <p className="font-display text-xl font-semibold text-white">HackFest 2026</p>
+                <p className="font-display text-xl font-semibold text-white">LOGICODE HACKFEST 2026</p>
                 <p className="mt-1 text-sm text-slate-400">Booting the neon experience...</p>
               </div>
             </div>

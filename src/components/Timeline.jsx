@@ -2,24 +2,44 @@ import { motion } from 'framer-motion';
 
 const milestones = [
   {
-    time: 'Day 0',
-    title: 'Registration and onboarding',
-    description: 'Teams sign in, meet mentors, and get the challenge brief.',
+    time: '08:00 AM',
+    title: 'Registration & Verification',
+    description: 'Teams sign in, verify their details, and settle in.',
   },
   {
-    time: 'Hour 1',
-    title: 'Ideation sprint',
-    description: 'Refine the problem, map user value, and pick a build direction.',
+    time: '09:00 AM',
+    title: 'Inauguration Ceremony',
+    description: 'Kickoff the hackathon with opening remarks and the problem statement.',
   },
   {
-    time: 'Midway check',
-    title: 'Mentor review',
-    description: 'Validate scope, de-risk the concept, and sharpen the demo story.',
+    time: '10:00 AM',
+    title: 'Coding Session I',
+    description: 'The sprint begins. Start building your solutions.',
   },
   {
-    time: 'Final hour',
-    title: 'Demo and awards',
-    description: 'Present polished prototypes and celebrate the strongest builds.',
+    time: '12:30 PM',
+    title: 'Snack Break',
+    description: 'Relax, recharge, and network.',
+  },
+  {
+    time: '01:00 PM',
+    title: 'Coding Session II',
+    description: 'Resume the development sprint and polish your prototypes.',
+  },
+  {
+    time: '02:30 PM',
+    title: 'Mid Evaluation',
+    description: 'Mentors assess progress and provide valuable feedback.',
+  },
+  {
+    time: '03:30 PM',
+    title: 'Final Evaluation',
+    description: 'Present polished prototypes to the judges.',
+  },
+  {
+    time: '04:30 PM',
+    title: 'Prize Distribution',
+    description: 'Celebrate the strongest builds and announce winners.',
   },
 ];
 

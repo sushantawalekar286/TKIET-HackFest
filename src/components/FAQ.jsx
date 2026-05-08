@@ -4,19 +4,27 @@ import { useState } from 'react';
 const faqs = [
   {
     question: 'Who can participate?',
-    answer: 'Students, makers, and early-stage builders who want to collaborate and ship a polished concept.',
+    answer: 'Students from FCT colleges affiliated with Warana University.',
   },
   {
-    question: 'How big can a team be?',
-    answer: 'Teams are typically 2 to 4 members so each person can contribute meaningfully during the sprint.',
+    question: 'What is the team size?',
+    answer: 'Minimum 2 and maximum 4 members.',
   },
   {
-    question: 'Do I need a fully finished product?',
-    answer: 'No. The focus is on a strong prototype, clear storytelling, and a demo that feels credible and useful.',
+    question: 'Is there a registration fee?',
+    answer: 'Yes, ₹100 per participant.',
   },
   {
-    question: 'What should I bring?',
-    answer: 'A laptop, charger, any preferred peripherals, and the energy to move quickly and iterate with intent.',
+    question: 'What should participants bring?',
+    answer: 'Laptop, charger, extension board, and valid college ID.',
+  },
+  {
+    question: 'Will certificates be provided?',
+    answer: 'Yes, all participants will receive certificates.',
+  },
+  {
+    question: 'Can we use any technology stack?',
+    answer: 'Yes, teams may use any suitable technologies.',
   },
 ];
 

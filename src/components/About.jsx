@@ -18,20 +18,21 @@ export default function About() {
         >
           <div className="glow-ring" />
           <motion.span variants={fadeUp} transition={{ duration: 0.55 }} className="section-label relative z-10">
-            About The Event
+            About The Hackathon
           </motion.span>
           <motion.h2 variants={fadeUp} transition={{ duration: 0.55 }} className="section-title relative z-10">
-            A futuristic build arena for ambitious teams.
+            Organized By Department of Computer Science & Engineering
           </motion.h2>
           <motion.p variants={fadeUp} transition={{ duration: 0.55 }} className="section-copy relative z-10">
-            HackFest brings together creators who want more than a weekend challenge. Expect a sleek environment, expert guidance, and a fast-moving build culture focused on shipping polished ideas that feel real from the first demo.
+            Logicode HackFest Hackathon 2026 is a university-level technical innovation event organized by the Department of Computer Science & Engineering under the Logicode Coding Club. The event provides students with a competitive platform to solve real-world problems using modern technologies within a focused 6-hour development sprint.
           </motion.p>
 
-          <motion.div variants={fadeUp} transition={{ duration: 0.55 }} className="relative z-10 mt-10 grid gap-4 md:grid-cols-3">
+          <motion.div variants={fadeUp} transition={{ duration: 0.55 }} className="relative z-10 mt-10 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              ['Built for teams', 'Collaborate across design, product, and engineering roles.'],
-              ['Mentorship loops', 'Get clear feedback from experienced builders throughout the event.'],
-              ['Demo-ready polish', 'Ship something visual, useful, and presentation-friendly.'],
+              ['Real-world Problem Solving', 'Tackle genuine challenges with innovative solutions.'],
+              ['Innovation & Creativity', 'Push boundaries and think outside the box.'],
+              ['Industry-Level Evaluation', 'Get judged by experts on real-world criteria.'],
+              ['Team Collaboration', 'Work together to build, design, and execute.'],
             ].map(([title, body]) => (
               <div key={title} className="rounded-3xl border border-white/10 bg-slate-950/40 p-6 backdrop-blur-md">
                 <h3 className="font-display text-lg font-semibold text-white">{title}</h3>
